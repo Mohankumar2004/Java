@@ -9,14 +9,18 @@ public class CountOfOccarenceOfChar {
 		int maxCount=0;
 		while(s1.length()>0)
 		{
-			char ch=s1.charAt(0);
-			s2=s1.replace(ch+"", "");
-			int count=(s1.length() - s2.length());
+			char ch=s1.charAt(0);//taking first char
+			s2=s1.replace(ch+"", "");//"" is used to replace with nothing
+			int count=(s1.length() - s2.length());//count of char
+			//updating maxCount and maxChar
 			if(count> maxCount) {
 				maxCount=count;
 				maxChar= ch;
 				
 			}
+			System.out.println("==================");
+			System.out.println(s1);
+			System.out.println(s2);
 			System.out.println(ch+"="+count);
 			s1=s2;
 		}

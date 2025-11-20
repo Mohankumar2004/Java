@@ -21,3 +21,4 @@ public class NeonNumber {
 		}
 	}
 }
+// 9 is a Neon Number because 9^2 = 81 and 8 + 1 = 9

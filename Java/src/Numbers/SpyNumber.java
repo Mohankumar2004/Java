@@ -22,3 +22,4 @@ public class SpyNumber {
 		}
 	}
 }
+// A Spy number is a number in which the sum of its digits is equal to the product of its digits.

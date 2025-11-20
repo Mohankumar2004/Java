@@ -1,6 +1,8 @@
 package Patterns;
 
-public class Diomend {
+
+
+public class de {
 	public static void main(String[] args) {
 		int rows = 5; // Number of rows for the upper half of the diamond
 
@@ -12,7 +14,15 @@ public class Diomend {
 			}
 			// Print stars
 			for (int k = 1; k <= (2 * i - 1); k++) {
-				System.out.print("*");
+				// Print star only at the borders
+				if(k==1 || k==(2*i-1)) {
+				
+					System.out.print("*");
+				}
+				else {
+					System.out.print(" ");
+				}
+				
 			}
 			// Move to the next line after each row
 			System.out.println();
@@ -26,7 +36,14 @@ public class Diomend {
 			}
 			// Print stars
 			for (int k = 1; k <= (2 * i - 1); k++) {
-				System.out.print("*");
+				// Print star only at the borders
+				if(k==1 || k==(2*i-1)) {
+					System.out.print("*");
+				}
+				else {
+					System.out.print(" ");
+				}
+				
 			}
 			// Move to the next line after each row
 			System.out.println();

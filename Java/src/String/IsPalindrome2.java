@@ -8,9 +8,9 @@ public class IsPalindrome2 {
 
 	private static boolean isPalindrome(String s) {
 		
-		int i=s.length();
-		int j=s.length()-1;
-		while(i<j)
+		int i=0;//0
+		int j=s.length()-1;//1
+		while(i<j)//
 		{
 			if(s.charAt(i)!=s.charAt(j))
 			return false;
