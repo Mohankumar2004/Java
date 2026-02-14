@@ -5,7 +5,20 @@ import java.util.Arrays;
 public class BubbleSort {
 	public static void main(String args[])
 	{
-		int [] a= {10,4,5,3,2,7};
+		int [] a= {10,4,5,3,2,7};//4,10,5,3,2,7
+		                        //4,5,10,3,2,7
+		                        //4,5,3,10,2,7
+		                        //4,5,3,2,10,7
+		                        //4,5,3,2,7,10
+		                        
+		                        //4,3,5,2,7,10
+		                        //4,3,2,5,7,10
+		                        //4,3,2,5,7,10
+		                        
+		                        //3,4,2,5,7,10
+		                        //3,2,4,5,7,10
+		                        
+		                        //2,3,4,5,7,10
 		sort(a);
 		System.out.println(Arrays.toString(a));
 	}

@@ -17,8 +17,8 @@ class Car implements Vehicle {
 
 public class InterfaceExample {
     public static void main(String[] args) {
-        Vehicle v = new Car();
-        v.start();
-        v.stop();
+        Vehicle v = new Car();  // Upcasting to the interface type
+        v.start();        // Calls Car's implementation of start()
+        v.stop();         // Calls Car's implementation of stop()
     }
 }

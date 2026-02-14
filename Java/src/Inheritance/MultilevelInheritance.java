@@ -1,6 +1,6 @@
 package Inheritance;
 
-class Animal {
+class Animal1 {
     void eat() {
         System.out.println("This animal eats food.");
     }
@@ -12,7 +12,7 @@ class Mammal extends Animal {
     }
 }
 
-class Dog extends Mammal {
+class Dog1 extends Mammal {
     void bark() {
         System.out.println("The dog barks.");
     }
@@ -20,7 +20,7 @@ class Dog extends Mammal {
 
 public class MultilevelInheritance {
     public static void main(String[] args) {
-        Dog d = new Dog();
+        Dog1 d = new Dog1();
         d.eat();
         d.walk();
         d.bark();

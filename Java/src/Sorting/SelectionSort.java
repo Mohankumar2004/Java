@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class SelectionSort {
 	public static void main(String args[])
 	{
-		int [] a= {2,5,1,5,3};
-		sort(a);
+		int [] a= {2,4,1,5,9};
+		sort(a);  //
 		System.out.println(Arrays.toString(a));
 	}
 
@@ -14,9 +14,9 @@ public class SelectionSort {
 		for(int i=0;i<a.length;i++)
 		{
 			int SmallElementIndex=i;
-			for(int j=0;j<a.length;j++)
+			for(int j=i+1;j<a.length;j++)
 			{
-				if(a[j]>a[SmallElementIndex])
+				if(a[j]<a[SmallElementIndex])
 				{
 					SmallElementIndex=j;
 				}

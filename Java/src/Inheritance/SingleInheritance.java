@@ -1,11 +1,11 @@
 package Inheritance;
-class Animal {
+class Animal3 {
     void eat() {
         System.out.println("This animal eats food.");
     }
 }
 
-class Dog extends Animal {
+class Dog3 extends Animal3 {
     void bark() {
         System.out.println("The dog barks.");
     }
@@ -13,7 +13,7 @@ class Dog extends Animal {
 
 public class SingleInheritance {
     public static void main(String[] args) {
-        Dog d = new Dog();
+        Dog3 d = new Dog3();
         d.eat();   // inherited method
         d.bark();  // child method
     }

@@ -7,7 +7,7 @@ class A {
     }
 }
 
-class B extends A {
+class B extends AA {
     // ✅ Overriding (same method as parent)
     @Override
     void m1() {
@@ -25,7 +25,7 @@ public class Full {
         // ---------------------------
         // 🕐 Late Binding (Runtime)
         // ---------------------------
-        A a1 = new B();   // upcasting
+        AA a1 = new B();   // upcasting
         a1.m1();           // ✅ calls B’s overridden m1() (runtime decision)
         // a1.m2();        // ❌ compile-time error (A doesn’t have m2())
 
